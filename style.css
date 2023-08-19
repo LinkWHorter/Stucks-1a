@@ -28,6 +28,8 @@ body {
 .chest p {
     font-family: 'minecraft_rusregular';
     color: rgb(64, 64, 64);
+    font-size: 1.5em;
+    padding-left: 1.5em;
     text-shadow: 1px 1px rgb(64, 64, 64, .6);
     z-index: 2;
     position: absolute;
@@ -104,46 +106,6 @@ td {
     font-family: 'minecraft_rusregular';
     text-shadow: 2px 2px gray;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    position: absolute;
-    top: 25%;
-    font-size: 56px;
-    opacity: 0;
-}
-
-@media only screen and (min-width: 1185px) {
-    .ort {
-        opacity: 0;
-    }
-    .chest p
-    {
-        font-size: 1.5em;
-        padding-left: 1.5em;
-    }
-}
-
-@media only screen and (max-width: 1185px) {
-    .chest p
-    {
-        font-size: 1em;
-        padding-left: 1.5em;
-    }
-}
-
-@media screen and (max-width: 1185px) and (orientation: portrait) {
-    .ort {opacity: 1;}
-    .function, .chest {opacity: 0;}
-}
-
-@media screen and (max-width: 1185px) and (orientation: landscape) {
-    .ort {opacity: 0;}
-    .function, .chest {opacity: 1;}
-
-    .chest p
-    {
-        font-size: 1em;
-        padding-left: 1em;
-    }
+    font-size: 16px;
+    margin-bottom:16px;
 }
