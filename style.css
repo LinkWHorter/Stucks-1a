@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'minecraft_rusregular';
+    src: url('minecraft.woff2') format('woff2'),
+         url('minecraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.chest {
+    left: 15%;
+    right: 15%;
+    position: absolute;
+    text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.chest img {
+    z-index: 1;
+    position: relative;
+    width: 98%;
+}
+
+.chest p {
+    font-family: 'minecraft_rusregular';
+    color: rgb(64, 64, 64);
+    text-shadow: 1px 1px rgb(64, 64, 64, .6);
+    z-index: 2;
+    position: absolute;
+}
+
+#stucks, #items {
+    color: rgb(38, 38, 38);
+    text-shadow: 1px 1px rgb(64, 64, 64, .6);
+}
+
+.table {
+    font-family: 'minecraft_rusregular';
+    text-shadow: 2px 2px gray;
+    z-index: 2;
+    position: absolute;
+    margin-top: -52%;
+    margin-left: 4%;
+    width: 92%;
+    height: 77%;
+    text-align: right;
+}
+
+.table, .shb {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.function, .fiol, #number {
+    display: wrap;
+    font-family: 'minecraft_rusregular';
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.function {
+    width: 100%;
+}
+
+.shb {
+    background-image: url("ShulkerClosBetter.webp");
+    text-shadow: 2px 2px gray, #fff 1px 0 10px;
+    height: 36px;
+    padding: 5px;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center 8px;
+}
+
+#number {
+    color: darkgray;
+    text-shadow: 1px 1px rgb(64, 64, 64);
+    background-image: url("Bedrock.png");
+    background-position: 250px center;
+}
+
+#number::placeholder {
+    backdrop-filter: blur(1px);
+    color: gray;
+}
+
+td {
+    background: url("Stone.webp");
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    width: 6%;
+    height: 15%;
+    opacity: 0;
+}
+
+@media only screen and (min-width: 1185px) {
+    .chest p
+    {
+        font-size: 1.5em;
+        padding-left: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 1185px) {
+    .chest p
+    {
+        font-size: 1em;
+        padding-left: 1em;
+    }
+}
