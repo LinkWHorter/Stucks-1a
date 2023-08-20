@@ -108,7 +108,7 @@ td {
     transform: translate(-50%, -50%);
     z-index: 2;
     position: absolute;
-    font-size: 48px;
+    font-size: 28px;
     opacity: 0;
 }
 
@@ -127,7 +127,7 @@ td {
     .chest p
     {
         font-size: 1em;
-        padding-left: 1.5em;
+        padding-left: 1.7em;
     }
 }
 
@@ -139,10 +139,4 @@ td {
 @media screen and (max-width: 1185px) and (orientation: landscape) {
     .ort {opacity: 0;}
     .function, .chest {opacity: 1;}
-
-    .chest p
-    {
-        font-size: 1em;
-        padding-left: 1em;
-    }
 }
