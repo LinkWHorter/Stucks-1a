@@ -79,6 +79,7 @@ body {
 
 #number {
     color: darkgray;
+    font-style: normal;
     text-shadow: 1px 1px rgb(64, 64, 64);
     background-image: url("Bedrock.png");
     background-position: 250px center;
@@ -88,6 +89,7 @@ body {
 #number::placeholder {
     backdrop-filter: blur(1px);
     color: gray;
+    font-style: italic;
 }
 
 td {
