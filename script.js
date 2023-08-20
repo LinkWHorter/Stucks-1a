@@ -27,7 +27,7 @@ function splitNumber() {
         st.innerHTML = group + " стаков";
     }
     
-    shb.innerHTML = "<br>"+Math.floor(group/72);
+    shb.innerHTML = "<br>"+Math.floor(group/27);
 
     if (isNaN(group)) {
         st.innerHTML = "Введите правильное";
