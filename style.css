@@ -103,9 +103,9 @@ td {
 .ort {
     font-family: 'minecraft_rusregular';
     text-shadow: 2px 2px gray;
-    text-align: center;
+    text-align: left;
     top: 25%;
-    left: 25%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     position: absolute;
