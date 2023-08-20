@@ -14,19 +14,39 @@ function splitNumber() {
     let table = document.getElementById("table");
     let rows = table.rows;
     console.log(rows);
-    if (group==1) 
+    if (number>=0)
     {
-        st.innerHTML = group + " стак";
+        if (group==1) 
+        {
+            st.innerHTML = group + " стак";
+        }
+        if (group<=4 && group>1) 
+        {
+            st.innerHTML = group + " стака";
+        }
+        if (group>4 || group<1)
+        {
+            st.innerHTML = group + " стаков";
+        }
+        it.innerHTML = "и " + remainder + " предметов";
     }
-    if (group<=4 && group>1) 
+    if (number<0) 
     {
-        st.innerHTML = group + " стака";
+        if (group==1) 
+        {
+            st.innerHTML = group + " стак, мля,";
+        }
+        if (group<=4 && group>1) 
+        {
+            st.innerHTML = group + " стака, мля,";
+        }
+        if (group>4 || group<1)
+        {
+            st.innerHTML = group + " стаков, мля,";
+        }
+        it.innerHTML = "и " + remainder + " предметов, <br>но на кой тебе минус, гений";
     }
-    if (group>4 || group<1)
-    {
-        st.innerHTML = group + " стаков";
-    }
-    
+
     shb.innerHTML = "<br>"+Math.floor(group/27);
 
     if (isNaN(group)) {
@@ -35,7 +55,6 @@ function splitNumber() {
         return;
     }
 
-    it.innerHTML = "и " + remainder + " предметов";
     for (let i = 0; i < groups; i++) {     
           let cells = rows[i%6].cells;
           let value = i == groups - 1 && remainder != 0 ? remainder : 64;

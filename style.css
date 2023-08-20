@@ -82,6 +82,7 @@ body {
     text-shadow: 1px 1px rgb(64, 64, 64);
     background-image: url("Bedrock.png");
     background-position: 250px center;
+    z-index: 2;
 }
 
 #number::placeholder {
@@ -107,7 +108,7 @@ td {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     font-size: 28px;
     opacity: 0;
