@@ -54,29 +54,29 @@ function splitNumber() {
         {
             st.innerHTML = group + " стаков";
         }
-        it.innerHTML = "и " + remainder + " предметов";
+        it.innerHTML = "i " + remainder + " предметiв";
     }
     if (number<0) 
     {
         if (group==1) 
         {
-            st.innerHTML = group + " стак, мля,";
+            st.innerHTML = group + " стак, ля,";
         }
         if (group<=4 && group>1) 
         {
-            st.innerHTML = group + " стака, мля,";
+            st.innerHTML = group + " стака, ля,";
         }
         if (group>4 || group<1)
         {
-            st.innerHTML = group + " стаков, мля,";
+            st.innerHTML = group + " стакiв, ля,";
         }
-        it.innerHTML = "и " + remainder + " предметов, <br>но на кой тебе минус, гений";
+        it.innerHTML = "i " + remainder + " предметiв, <br>але навіщо тобі мінусове число..";
     }
 
     shb.innerHTML = "<br>"+Math.floor(group/27);
 
     if (isNaN(group)) {
-        st.innerHTML = "Введите правильное";
+        st.innerHTML = "Введiть правильне";
         it.innerHTML = " число";
         return;
     }
