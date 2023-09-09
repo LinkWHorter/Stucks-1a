@@ -52,7 +52,7 @@ function splitNumber() {
         }
         if (group>4 || group<1)
         {
-            st.innerHTML = group + " стаков";
+            st.innerHTML = group + " стакiв";
         }
         it.innerHTML = "i " + remainder + " предметiв";
     }
