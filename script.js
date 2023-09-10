@@ -52,31 +52,31 @@ function splitNumber() {
         }
         if (group>4 || group<1)
         {
-            st.innerHTML = group + " стакiв";
+            st.innerHTML = group + " стаков";
         }
-        it.innerHTML = "i " + remainder + " предметiв";
+        it.innerHTML = "и " + remainder + " предметов";
     }
     if (number<0) 
     {
         if (group==1) 
         {
-            st.innerHTML = group + " стак, ля,";
+            st.innerHTML = group + " стак, мля,";
         }
         if (group<=4 && group>1) 
         {
-            st.innerHTML = group + " стака, ля,";
+            st.innerHTML = group + " стака, мля,";
         }
         if (group>4 || group<1)
         {
-            st.innerHTML = group + " стакiв, ля,";
+            st.innerHTML = group + " стаков, мля,";
         }
-        it.innerHTML = "i " + remainder + " предметiв, <br>але навіщо тобі мінусове число..";
+        it.innerHTML = "и " + remainder + " предметов, <br>но зачем тебе минус, человек..";
     }
 
     shb.innerHTML = "<br>"+Math.floor(group/27);
 
     if (isNaN(group)) {
-        st.innerHTML = "Введiть правильне";
+        st.innerHTML = "Введите правильное";
         it.innerHTML = " число";
         return;
     }
